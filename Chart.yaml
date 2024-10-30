@@ -1,0 +1,6 @@
+apiVersion: v2
+name: array-issue-demo
+description: demo helm for unittest
+type: application
+version: 0.0.0
+appVersion: "0.0.0"

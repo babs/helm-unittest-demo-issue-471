@@ -1,0 +1,13 @@
+suite: demo set array
+templates:
+  - templates/manifest.yaml
+tests:
+  - it: shoud generate a document and only patch the second element attribute attribute
+    set:
+      anArray[1].attribute: new attribute1
+    asserts:
+      - matchSnapshot: {}
+      - equal:
+          path: anArray[0].attribute
+          value: attribute0
+
